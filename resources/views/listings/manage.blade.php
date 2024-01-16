@@ -2,7 +2,7 @@
     <x-card class="p-10">
         <header>
             <h1 class="text-3xl text-center font-bold my-6 uppercase">
-                Manage Gigs
+                Manage Posts
             </h1>
         </header>
 
@@ -17,7 +17,7 @@
                         </a>
                     </td>
                     <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
-                        <a href="/listings/{{ $listing['id'] }}" class="text-blue-400 px-6 py-2 rounded-xl"><i class="fa-solid fa-pen-to-square"></i>
+                        <a href="/listings/{{ $listing['id'] }}/edit" class="text-blue-400 px-6 py-2 rounded-xl"><i class="fa-solid fa-pen-to-square"></i>
                             Edit</a>
                     </td>
                     <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
@@ -32,7 +32,7 @@
                 @else
                 <tr class="border-gray-300">
                     <td class="px-4 py-8 border-b border-t border-gray-300 text-lg">
-                        You have not posted any gigs yet.
+                        You have not posted any jobs yet.
                     </td>
                 </tr>
                 @endunless
